@@ -68,7 +68,9 @@ app.use(express.static(__dirname + '/public'));
 // })
 
 
-
+app.get("/sample",function(req,res){
+	res.render("sampledetails");
+})
 //login page of teacher
 app.post("/teacherpage",function(req,res){
 	res.render("teacherlogin");
